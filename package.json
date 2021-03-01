@@ -1,6 +1,6 @@
 {
   "name": "sfcc-cartridge-integrity-check",
-  "version": "2.0.0-pre",
+  "version": "2.0.0",
   "description": "Check the integrity of SFCC cartridges that shouldn't be modified",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
