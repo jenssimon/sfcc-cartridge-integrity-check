@@ -61,6 +61,7 @@ const checkCartridgeIntegrity = (
       const isUncommitted = !!uncommitted;
       process.stdout.write(`Integrity for ${cartridge} - ${
         ok ? chalk.bold.green('OK ✅') : chalk.bold.red('FAIL ❌')
+      // eslint-disable-next-line sonarjs/no-nested-template-literals
       }${uncommitted ? ` - ${chalk.bold.yellow(`${uncommitted} uncommitted file(s)`)}` : ''}\n`);
       if (!ok) {
         modifiedCartridges.push(cartridge);
