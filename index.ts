@@ -18,13 +18,12 @@ type CartridgeIntegrityCheckReturn = {
   generateCartridgeIntegrityDataFile: (filename: string) => void;
 }
 
-const getDirHashes = (readOnlyCartridges: string[]) => readOnlyCartridges.reduce<{ [index: string]: string }>(
-  (acc, cartridge) => {
-    const res = shell.exec(`git rev-list -1 HEAD -- cartridges/${cartridge}/`, { silent: true });
-    acc[cartridge] = res.stdout.trim();
-    return acc;
-  }, {},
-);
+const getDirHashes = (readOnlyCartridges: string[]) => readOnlyCartridges
+  .reduce<{ [index: string]: string }>((acc, cartridge) => {
+  const res = shell.exec(`git rev-list -1 HEAD -- cartridges/${cartridge}/`, { silent: true });
+  acc[cartridge] = res.stdout.trim();
+  return acc;
+}, {});
 
 const getUncommitted = (cartridge: string) => [
   shell.exec(`git diff --name-only cartridges/${cartridge}/`, { silent: true }),
