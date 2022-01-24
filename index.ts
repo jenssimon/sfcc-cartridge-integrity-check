@@ -1,6 +1,6 @@
 import fs from 'fs';
 import shell from 'shelljs';
-import chalk from 'chalk';
+import chalk from 'chalk'; // eslint-disable-line import/no-unresolved
 import { table, getBorderCharacters } from 'table';
 
 type IntegrityData = {
