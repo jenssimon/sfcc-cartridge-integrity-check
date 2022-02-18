@@ -368,7 +368,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jenssimon/eslint-config-base@npm:^5.3.0":
+"@jenssimon/eslint-config-base@npm:5.3.0":
   version: 5.3.0
   resolution: "@jenssimon/eslint-config-base@npm:5.3.0"
   dependencies:
@@ -394,7 +394,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jenssimon/eslint-config-typescript@npm:^3.3.3":
+"@jenssimon/eslint-config-typescript@npm:3.3.3":
   version: 3.3.3
   resolution: "@jenssimon/eslint-config-typescript@npm:3.3.3"
   dependencies:
@@ -497,14 +497,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^17.0.18":
+"@types/node@npm:17.0.18":
   version: 17.0.18
   resolution: "@types/node@npm:17.0.18"
   checksum: 6c4edfc2b3ba2342a9c3d56e934c5245948ab752f4dc04bd6790b9603e6ebc53bc4f5befc3662e207f7dba2ddd17ccf657f915e319ea7cdd4f77b851079d1611
   languageName: node
   linkType: hard
 
-"@types/shelljs@npm:^0.8.11":
+"@types/shelljs@npm:0.8.11":
   version: 0.8.11
   resolution: "@types/shelljs@npm:0.8.11"
   dependencies:
@@ -1517,7 +1517,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.9.0":
+"eslint@npm:8.9.0":
   version: 8.9.0
   resolution: "eslint@npm:8.9.0"
   dependencies:
@@ -2386,7 +2386,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-run-all@npm:^4.1.5":
+"npm-run-all@npm:4.1.5":
   version: 4.1.5
   resolution: "npm-run-all@npm:4.1.5"
   dependencies:
@@ -2844,13 +2844,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sfcc-cartridge-integrity-check@workspace:."
   dependencies:
-    "@jenssimon/eslint-config-base": ^5.3.0
-    "@jenssimon/eslint-config-typescript": ^3.3.3
-    "@types/node": ^17.0.18
-    "@types/shelljs": ^0.8.11
+    "@jenssimon/eslint-config-base": 5.3.0
+    "@jenssimon/eslint-config-typescript": 3.3.3
+    "@types/node": 17.0.18
+    "@types/shelljs": 0.8.11
     chalk: ^5.0.0
-    eslint: ^8.9.0
-    npm-run-all: ^4.1.5
+    eslint: 8.9.0
+    npm-run-all: 4.1.5
     shelljs: ^0.8.5
     table: ^6.8.0
     typescript: 4.5.5
