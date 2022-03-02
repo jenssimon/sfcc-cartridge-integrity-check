@@ -26,9 +26,12 @@
     "url": "https://github.com/jenssimon/sfcc-tools/tree/master/packages/sfcc-cartridge-integrity-check"
   },
   "scripts": {
-    "lint": "eslint --fix ./",
+    "lint": "eslint --ext .tsx,.ts,.jsx,.js --fix ./",
     "build": "tsc",
-    "prepare": "npm-run-all build"
+    "prepare": "npm-run-all build",
+    "ci": "run-s \"ci:*\"",
+    "ci:lint": "eslint --ext .tsx,.ts,.jsx,.js ./",
+    "ci:tsc": "tsc --noEmit"
   },
   "dependencies": {
     "chalk": "^5.0.0",
