@@ -48,7 +48,7 @@ const checkCartridgeIntegrity = (
     const hashes = getDirHashes(readOnlyCartridges);
     const modifiedCartridges = [];
     const uncommittedChanges = [];
-    const integrityData: { [index: string]: { hash: string, uncommitted: number }} = {};
+    const integrityData: { [index: string]: { hash: string; uncommitted: number }} = {};
     Object.entries(hashes).forEach(([cartridge, hash]) => {
       integrityData[cartridge] = {
         hash,
