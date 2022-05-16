@@ -29,9 +29,9 @@
     "lint": "eslint --ext .tsx,.ts,.jsx,.js --fix ./",
     "build": "tsc",
     "prepare": "npm-run-all build",
-    "ci": "run-s \"ci:*\"",
-    "ci:lint": "eslint --ext .tsx,.ts,.jsx,.js ./",
-    "ci:tsc": "tsc --noEmit"
+    "ci-test": "run-s \"ci-test:*\"",
+    "ci-test:lint": "eslint --ext .tsx,.ts,.jsx,.js ./",
+    "ci-test:tsc": "tsc --noEmit"
   },
   "dependencies": {
     "chalk": "^5.0.0",
