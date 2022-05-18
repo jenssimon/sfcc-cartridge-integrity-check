@@ -31,7 +31,11 @@
     "prepare": "npm-run-all build",
     "ci-test": "run-s \"ci-test:*\"",
     "ci-test:lint": "eslint --ext .tsx,.ts,.jsx,.js ./",
-    "ci-test:tsc": "tsc --noEmit"
+    "ci-test:tsc": "tsc --noEmit",
+    "commit": "cz",
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
   "dependencies": {
     "chalk": "^5.0.0",
