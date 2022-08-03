@@ -20,6 +20,7 @@ type CartridgeIntegrityCheckReturn = {
 }
 
 const getDirHashes = (readOnlyCartridges: string[]) => readOnlyCartridges
+  // eslint-disable-next-line unicorn/no-array-reduce
   .reduce<{ [index: string]: string }>((acc, cartridge) => {
   const res = shell.exec(`git rev-list -1 HEAD -- cartridges/${cartridge}/`, { silent: true });
   acc[cartridge] = res.stdout.trim();
@@ -30,8 +31,7 @@ const getUncommitted = (cartridge: string) => [
   shell.exec(`git diff --name-only cartridges/${cartridge}/`, { silent: true }),
   shell.exec(`git diff --name-only --cached cartridges/${cartridge}/`, { silent: true }),
 ]
-  .map(({ stdout }) => stdout.trim().split('\n'))
-  .reduce((acc, val) => acc.concat(val), [])
+  .flatMap(({ stdout }) => stdout.trim().split('\n'))
   .filter((line) => !!line.trim())
   .length;
 
@@ -71,10 +71,10 @@ const checkCartridgeIntegrity = (
         uncommittedChanges.push(cartridge);
       }
     });
-    if (modifiedCartridges.length) {
+    if (modifiedCartridges.length > 0) {
       process.stdout.write(chalk.bold.red('\n🛑 Some read only cartridges are modified!!!\n'));
     }
-    if (uncommittedChanges.length) {
+    if (uncommittedChanges.length > 0) {
       process.stdout.write(chalk.bold.yellow('✋ You have uncommitted changes in read-only cartridge(s)!\n'));
       process.stdout.write(chalk.yellow('\nDo you really want to modify these cartridge(s)?\n'));
     }
