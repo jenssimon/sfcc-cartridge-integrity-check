@@ -20,7 +20,6 @@ type CartridgeIntegrityCheckReturn = {
 }
 
 const getDirHashes = (readOnlyCartridges: string[]) => readOnlyCartridges
-  // eslint-disable-next-line unicorn/no-array-reduce
   .reduce<{ [index: string]: string }>((acc, cartridge) => {
   const res = shell.exec(`git rev-list -1 HEAD -- cartridges/${cartridge}/`, { silent: true });
   acc[cartridge] = res.stdout.trim();
