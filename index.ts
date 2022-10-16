@@ -1,4 +1,4 @@
-import fs from 'fs';
+import fs from 'node:fs';
 
 import shell from 'shelljs';
 import chalk from 'chalk';
