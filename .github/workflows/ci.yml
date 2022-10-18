@@ -19,7 +19,6 @@ jobs:
         uses: fkirc/skip-duplicate-actions@v5.2.0
         with:
           skip_after_successful_duplicate: 'true'
-          concurrent_skipping: 'same_content_newer'
 
   build:
     needs: pre_job
