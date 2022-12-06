@@ -50,7 +50,7 @@
     "@jenssimon/eslint-config-typescript": "3.6.14",
     "@types/node": "18.11.11",
     "@types/shelljs": "0.8.11",
-    "commitizen": "4.2.5",
+    "commitizen": "4.2.6",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.29.0",
     "husky": "8.0.2",
