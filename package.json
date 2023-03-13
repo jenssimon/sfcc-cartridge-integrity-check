@@ -48,7 +48,7 @@
     "@commitlint/config-conventional": "17.4.4",
     "@jenssimon/eslint-config-base": "6.6.12",
     "@jenssimon/eslint-config-typescript": "3.6.28",
-    "@types/node": "18.15.0",
+    "@types/node": "18.15.1",
     "@types/shelljs": "0.8.11",
     "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
