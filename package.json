@@ -26,11 +26,11 @@
     "url": "https://github.com/jenssimon/sfcc-cartridge-integrity-check"
   },
   "scripts": {
-    "lint": "eslint --ext .tsx,.ts,.jsx,.js --fix ./",
+    "lint": "eslint --ext .tsx,.ts,.mts,.cts,.jsx,.js,.mjs,.cjs --fix ./",
     "build": "tsc",
     "prepare": "npm-run-all build",
     "ci-test": "run-s \"ci-test:*\"",
-    "ci-test:lint": "eslint --ext .tsx,.ts,.jsx,.js ./",
+    "ci-test:lint": "eslint --ext .tsx,.ts,.mts,.cts,.jsx,.js,.mjs,.cjs ./",
     "ci-test:tsc": "tsc --noEmit",
     "commit": "cz",
     "postinstall": "husky install",
@@ -46,7 +46,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.6.6",
     "@commitlint/config-conventional": "17.6.6",
-    "@jenssimon/eslint-config-base": "6.9.0",
+    "@jenssimon/eslint-config-base": "7.0.1",
     "@jenssimon/eslint-config-typescript": "3.7.7",
     "@types/node": "18.16.18",
     "@types/shelljs": "0.8.12",
