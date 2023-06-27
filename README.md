@@ -20,7 +20,7 @@ To protect your customization projects from (unintented) modifications of such c
 The git hash of the last commit in the cartridge is used to check if there is a modification. Also the uncommitted files will be checked and a warning will be shown.
 
 ```javascript
-const cartridgeIntegrity = require('./cartridgeIntegrity');
+const cartridgeIntegrity = require('./cartridgeIntegrity')
 
 // retrieve this data from a file
 const integrityData = {
