@@ -5,18 +5,18 @@ import chalk from 'chalk'
 import { table, getBorderCharacters } from 'table'
 
 type IntegrityData = {
-  [index: string]: string;
+  [index: string]: string
 }
 
 type CartrideIntegrityCheckParams = {
-  readOnlyCartridges: string[];
-  integrityData: IntegrityData;
-  customizationProject: boolean;
+  readOnlyCartridges: string[]
+  integrityData: IntegrityData
+  customizationProject: boolean
 }
 
 type CartridgeIntegrityCheckReturn = {
-  checkCartridgeIntegrity: () => void;
-  generateCartridgeIntegrityDataFile: (filename: string) => void;
+  checkCartridgeIntegrity: () => void
+  generateCartridgeIntegrityDataFile: (filename: string) => void
 }
 
 const getDirHashes = (readOnlyCartridges: string[]) => readOnlyCartridges
@@ -48,7 +48,7 @@ const checkCartridgeIntegrity = (
     const hashes = getDirHashes(readOnlyCartridges)
     const modifiedCartridges = []
     const uncommittedChanges = []
-    const integrityData: { [index: string]: { hash: string; uncommitted: number }} = {}
+    const integrityData: { [index: string]: { hash: string, uncommitted: number }} = {}
     Object.entries(hashes).forEach(([cartridge, hash]) => {
       integrityData[cartridge] = {
         hash,
