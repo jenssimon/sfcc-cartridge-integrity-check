@@ -25,7 +25,7 @@ const cartridgeIntegrity = require('./cartridgeIntegrity');
 // retrieve this data from a file
 const integrityData = {
   'app_storefront_base': 'SHA',
-};
+}
 
 const { checkCartridgeIntegrity, generateCartridgeIntegrityDataFile } = cartridgeIntegrity({
   readOnlyCartridges: [
@@ -33,15 +33,15 @@ const { checkCartridgeIntegrity, generateCartridgeIntegrityDataFile } = cartridg
   ],
   integrityData,
   customizationProject: true, // if false integrity won't be checked
-});
+})
 
-checkCartridgeIntegrity();
+checkCartridgeIntegrity()
 ```
 
 You can generate a file containing the integrity data as JSON.
 
 ```javascript
-generateCartridgeIntegrityDataFile('./path/to/file.json');
+generateCartridgeIntegrityDataFile('./path/to/file.json')
 ```
 
 ## License
