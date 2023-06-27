@@ -1,4 +1,4 @@
-[![NPM version][npm-image]][npm-url] [![Downloads][npm-downloads-image]][npm-url] [![star this repo][gh-stars-image]][gh-url] [![fork this repo][gh-forks-image]][gh-url] [![Build Status][gh-checks-image]][gh-url]
+[![NPM version][npm-image]][npm-url] [![Downloads][npm-downloads-image]][npm-url] [![star this repo][gh-stars-image]][gh-url] [![fork this repo][gh-forks-image]][gh-url] [![CI][gh-status-image]][gh-status-url]
 
 # sfcc-cartridge-integrity-check
 
@@ -46,7 +46,7 @@ generateCartridgeIntegrityDataFile('./path/to/file.json');
 
 ## License
 
-MIT © 2022 [Jens Simon](https://github.com/jenssimon)
+MIT © 2023 [Jens Simon](https://github.com/jenssimon)
 
 [npm-url]: https://www.npmjs.com/package/sfcc-cartridge-integrity-check
 [npm-image]: https://badgen.net/npm/v/sfcc-cartridge-integrity-check
@@ -55,4 +55,5 @@ MIT © 2022 [Jens Simon](https://github.com/jenssimon)
 [gh-url]: https://github.com/jenssimon/sfcc-cartridge-integrity-check
 [gh-stars-image]: https://badgen.net/github/stars/jenssimon/sfcc-cartridge-integrity-check
 [gh-forks-image]: https://badgen.net/github/forks/jenssimon/sfcc-cartridge-integrity-check
-[gh-checks-image]: https://badgen.net/github/status/jenssimon/sfcc-cartridge-integrity-check
+[gh-status-image]: https://github.com/jenssimon/sfcc-cartridge-integrity-check/actions/workflows/ci.yml/badge.svg
+[gh-status-url]: https://github.com/jenssimon/sfcc-cartridge-integrity-check/actions/workflows/ci.yml
