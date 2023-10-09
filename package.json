@@ -47,7 +47,7 @@
     "@commitlint/cli": "17.7.2",
     "@commitlint/config-conventional": "17.7.0",
     "@jenssimon/eslint-config-base": "7.2.6",
-    "@jenssimon/eslint-config-typescript": "5.1.11",
+    "@jenssimon/eslint-config-typescript": "5.1.12",
     "@types/node": "18.18.4",
     "@types/shelljs": "0.8.13",
     "commitizen": "4.3.0",
