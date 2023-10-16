@@ -82,7 +82,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/cli@npm:17.8.0":
+"@commitlint/cli@npm:^17.8.0":
   version: 17.8.0
   resolution: "@commitlint/cli@npm:17.8.0"
   dependencies:
@@ -102,7 +102,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@commitlint/config-conventional@npm:17.8.0":
+"@commitlint/config-conventional@npm:^17.8.0":
   version: 17.8.0
   resolution: "@commitlint/config-conventional@npm:17.8.0"
   dependencies:
@@ -461,7 +461,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jenssimon/eslint-config-base@npm:7.3.0":
+"@jenssimon/eslint-config-base@npm:^7.3.0":
   version: 7.3.0
   resolution: "@jenssimon/eslint-config-base@npm:7.3.0"
   dependencies:
@@ -489,7 +489,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jenssimon/eslint-config-typescript@npm:5.2.0":
+"@jenssimon/eslint-config-typescript@npm:^5.2.0":
   version: 5.2.0
   resolution: "@jenssimon/eslint-config-typescript@npm:5.2.0"
   dependencies:
@@ -1215,13 +1215,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.18.5":
-  version: 18.18.5
-  resolution: "@types/node@npm:18.18.5"
-  checksum: fc8c9b2bf226270cf9085a7dac76ce09dd7c3519ec9b687ee2b50385954ab3709c45ca82d002d1536e24286803cd194d7ab7008acebdcd6681b8b19d4277fa5c
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:20.5.1":
   version: 20.5.1
   resolution: "@types/node@npm:20.5.1"
@@ -1233,6 +1226,13 @@ __metadata:
   version: 14.18.31
   resolution: "@types/node@npm:14.18.31"
   checksum: df33021d673a5e3c943cf96c9f3fbccf364d20f487b2ab7eb49db144974c2049f0a91e9358df09235f543c1f0b11388c5b0b636ae1f2ed55a27c75f63bc3d2c5
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^18.18.5":
+  version: 18.18.5
+  resolution: "@types/node@npm:18.18.5"
+  checksum: fc8c9b2bf226270cf9085a7dac76ce09dd7c3519ec9b687ee2b50385954ab3709c45ca82d002d1536e24286803cd194d7ab7008acebdcd6681b8b19d4277fa5c
   languageName: node
   linkType: hard
 
@@ -1257,7 +1257,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/shelljs@npm:0.8.13":
+"@types/shelljs@npm:^0.8.13":
   version: 0.8.13
   resolution: "@types/shelljs@npm:0.8.13"
   dependencies:
@@ -2500,32 +2500,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commitizen@npm:4.3.0":
-  version: 4.3.0
-  resolution: "commitizen@npm:4.3.0"
-  dependencies:
-    cachedir: 2.3.0
-    cz-conventional-changelog: 3.3.0
-    dedent: 0.7.0
-    detect-indent: 6.1.0
-    find-node-modules: ^2.1.2
-    find-root: 1.1.0
-    fs-extra: 9.1.0
-    glob: 7.2.3
-    inquirer: 8.2.5
-    is-utf8: ^0.2.1
-    lodash: 4.17.21
-    minimist: 1.2.7
-    strip-bom: 4.0.0
-    strip-json-comments: 3.1.1
-  bin:
-    commitizen: bin/commitizen
-    cz: bin/git-cz
-    git-cz: bin/git-cz
-  checksum: 5a54f81ab7f24b74dd7791ae408796b0ac9ae6675cbe85db71047cee131e627ed5bfb9365de8b5777bedfbcdee1bccf15e5da5dae8b09b3fce93b551baa2cb63
-  languageName: node
-  linkType: hard
-
 "commitizen@npm:^4.0.3":
   version: 4.2.5
   resolution: "commitizen@npm:4.2.5"
@@ -2549,6 +2523,32 @@ __metadata:
     cz: bin/git-cz
     git-cz: bin/git-cz
   checksum: 28f5d10cf332663f1710edb2ca22473664bc4457146ce6922896ed2ed6ee2a23add607b04d5b8d1bb7ee09bb78bc0d38d09057e0ab39b38e44b172765e3835c9
+  languageName: node
+  linkType: hard
+
+"commitizen@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "commitizen@npm:4.3.0"
+  dependencies:
+    cachedir: 2.3.0
+    cz-conventional-changelog: 3.3.0
+    dedent: 0.7.0
+    detect-indent: 6.1.0
+    find-node-modules: ^2.1.2
+    find-root: 1.1.0
+    fs-extra: 9.1.0
+    glob: 7.2.3
+    inquirer: 8.2.5
+    is-utf8: ^0.2.1
+    lodash: 4.17.21
+    minimist: 1.2.7
+    strip-bom: 4.0.0
+    strip-json-comments: 3.1.1
+  bin:
+    commitizen: bin/commitizen
+    cz: bin/git-cz
+    git-cz: bin/git-cz
+  checksum: 5a54f81ab7f24b74dd7791ae408796b0ac9ae6675cbe85db71047cee131e627ed5bfb9365de8b5777bedfbcdee1bccf15e5da5dae8b09b3fce93b551baa2cb63
   languageName: node
   linkType: hard
 
@@ -2778,7 +2778,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cz-conventional-changelog@npm:3.3.0":
+"cz-conventional-changelog@npm:3.3.0, cz-conventional-changelog@npm:^3.3.0":
   version: 3.3.0
   resolution: "cz-conventional-changelog@npm:3.3.0"
   dependencies:
@@ -3671,7 +3671,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.51.0":
+"eslint@npm:^8.51.0":
   version: 8.51.0
   resolution: "eslint@npm:8.51.0"
   dependencies:
@@ -4709,7 +4709,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:8.0.3":
+"husky@npm:^8.0.3":
   version: 8.0.3
   resolution: "husky@npm:8.0.3"
   bin:
@@ -5758,7 +5758,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:15.0.1":
+"lint-staged@npm:^15.0.1":
   version: 15.0.1
   resolution: "lint-staged@npm:15.0.1"
   dependencies:
@@ -6758,7 +6758,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-run-all@npm:4.1.5":
+"npm-run-all@npm:^4.1.5":
   version: 4.1.5
   resolution: "npm-run-all@npm:4.1.5"
   dependencies:
@@ -7484,7 +7484,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinst@npm:3.0.0":
+"pinst@npm:^3.0.0":
   version: 3.0.0
   resolution: "pinst@npm:3.0.0"
   bin:
@@ -8173,7 +8173,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:22.0.5":
+"semantic-release@npm:^22.0.5":
   version: 22.0.5
   resolution: "semantic-release@npm:22.0.5"
   dependencies:
@@ -8287,25 +8287,25 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sfcc-cartridge-integrity-check@workspace:."
   dependencies:
-    "@commitlint/cli": 17.8.0
-    "@commitlint/config-conventional": 17.8.0
-    "@jenssimon/eslint-config-base": 7.3.0
-    "@jenssimon/eslint-config-typescript": 5.2.0
-    "@types/node": 18.18.5
-    "@types/shelljs": 0.8.13
+    "@commitlint/cli": ^17.8.0
+    "@commitlint/config-conventional": ^17.8.0
+    "@jenssimon/eslint-config-base": ^7.3.0
+    "@jenssimon/eslint-config-typescript": ^5.2.0
+    "@types/node": ^18.18.5
+    "@types/shelljs": ^0.8.13
     chalk: ^5.0.1
-    commitizen: 4.3.0
-    cz-conventional-changelog: 3.3.0
-    eslint: 8.51.0
-    husky: 8.0.3
-    lint-staged: 15.0.1
-    npm-run-all: 4.1.5
-    pinst: 3.0.0
-    semantic-release: 22.0.5
+    commitizen: ^4.3.0
+    cz-conventional-changelog: ^3.3.0
+    eslint: ^8.51.0
+    husky: ^8.0.3
+    lint-staged: ^15.0.1
+    npm-run-all: ^4.1.5
+    pinst: ^3.0.0
+    semantic-release: ^22.0.5
     shelljs: ^0.8.5
     table: ^6.8.0
-    ts-node: 10.9.1
-    typescript: 5.2.2
+    ts-node: ^10.9.1
+    typescript: ^5.2.2
   languageName: unknown
   linkType: soft
 
@@ -9051,7 +9051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:10.9.1, ts-node@npm:^10.8.1":
+"ts-node@npm:^10.8.1, ts-node@npm:^10.9.1":
   version: 10.9.1
   resolution: "ts-node@npm:10.9.1"
   dependencies:
@@ -9256,16 +9256,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.2.2":
-  version: 5.2.2
-  resolution: "typescript@npm:5.2.2"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
-  languageName: node
-  linkType: hard
-
 "typescript@npm:^4.6.4":
   version: 4.8.3
   resolution: "typescript@npm:4.8.3"
@@ -9286,13 +9276,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@5.2.2#~builtin<compat/typescript>":
+"typescript@npm:^5.2.2":
   version: 5.2.2
-  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"
+  resolution: "typescript@npm:5.2.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 0f4da2f15e6f1245e49db15801dbee52f2bbfb267e1c39225afdab5afee1a72839cd86000e65ee9d7e4dfaff12239d28beaf5ee431357fcced15fb08583d72ca
+  checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
   languageName: node
   linkType: hard
 
@@ -9313,6 +9303,16 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: dfe2ee3b9da1d74b9e06784ae90c20c435db9ad6ab23172911f6cdbfd7ab7213ae3611c4254c5a2c6dc2e89f05a658b95493890bf62d218267033b3d8a2e4dd6
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@^5.2.2#~builtin<compat/typescript>":
+  version: 5.2.2
+  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 0f4da2f15e6f1245e49db15801dbee52f2bbfb267e1c39225afdab5afee1a72839cd86000e65ee9d7e4dfaff12239d28beaf5ee431357fcced15fb08583d72ca
   languageName: node
   linkType: hard
 

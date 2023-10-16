@@ -41,22 +41,22 @@
     "table": "^6.8.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.8.0",
-    "@commitlint/config-conventional": "17.8.0",
-    "@jenssimon/eslint-config-base": "7.3.0",
-    "@jenssimon/eslint-config-typescript": "5.2.0",
-    "@types/node": "18.18.5",
-    "@types/shelljs": "0.8.13",
-    "commitizen": "4.3.0",
-    "cz-conventional-changelog": "3.3.0",
-    "eslint": "8.51.0",
-    "husky": "8.0.3",
-    "lint-staged": "15.0.1",
-    "npm-run-all": "4.1.5",
-    "pinst": "3.0.0",
-    "semantic-release": "22.0.5",
-    "ts-node": "10.9.1",
-    "typescript": "5.2.2"
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
+    "@jenssimon/eslint-config-base": "^7.3.0",
+    "@jenssimon/eslint-config-typescript": "^5.2.0",
+    "@types/node": "^18.18.5",
+    "@types/shelljs": "^0.8.13",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.51.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.1",
+    "npm-run-all": "^4.1.5",
+    "pinst": "^3.0.0",
+    "semantic-release": "^22.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   },
   "eslintConfig": {
     "extends": [
