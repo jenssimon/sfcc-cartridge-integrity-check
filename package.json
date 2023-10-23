@@ -36,22 +36,22 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^5.3.0",
     "shelljs": "^0.8.5",
-    "table": "^6.8.0"
+    "table": "^6.8.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.0.0",
     "@commitlint/config-conventional": "^18.0.0",
-    "@jenssimon/eslint-config-base": "^7.3.0",
-    "@jenssimon/eslint-config-typescript": "^5.2.0",
-    "@types/node": "^18.18.5",
-    "@types/shelljs": "^0.8.13",
+    "@jenssimon/eslint-config-base": "^7.3.1",
+    "@jenssimon/eslint-config-typescript": "^5.2.2",
+    "@types/node": "^18.18.6",
+    "@types/shelljs": "^0.8.14",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.51.0",
+    "eslint": "^8.52.0",
     "husky": "^8.0.3",
-    "lint-staged": "^15.0.1",
+    "lint-staged": "^15.0.2",
     "npm-run-all": "^4.1.5",
     "pinst": "^3.0.0",
     "semantic-release": "^22.0.5",
