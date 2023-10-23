@@ -4,12 +4,30 @@
 
 > Check the integrity of SFCC cartridges that shouldn't be modified.
 
+> **Warning**
+>
+> **DEPRECATED**
+>
+> There are easier ways to detect that something has changed in SFRA core cartridges.
+>
+> Example:
+>
+> Using GitHub actions [labeler](https://github.com/actions/labeler) can be used to mark PRs with a label when a change on SFRA core cartridges is included.
+>
+> ```yaml
+> # .github/labeler.yml
+> sfra-change:
+> - cartridges/app_storefront_base/**/*
+> - cartridges/bm_app_storefront_base/**/*
+> - modules/server/**/*
+> ```
+
 ![Screenshot](https://github.com/jenssimon/sfcc-cartridge-integrity-check/raw/main/screenshot.png)
 
 ## Install
 
 ```sh
-$ yarn add sfcc-cartridge-integrity-check --dev
+yarn add sfcc-cartridge-integrity-check --dev
 ```
 
 ## Usage
